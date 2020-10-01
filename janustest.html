@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+  <meta charset="utf-8" />
+  <title>Janus WebSocket Test</title>
+  <h2>Janus WebSocket Test</h2>
+  <!--input type="button" id="startYT" onclick="startYTStream()" disabled value="START Youtube Stream"></input-->
+  <br>
+<!--iframe width="560" height="315" src="https://www.youtube.com/embed/siHSvahIuYc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe-->
+  <br>
+  <audio id="audio" autoplay></audio>
+  <section id="video">
+    <label for="localVideo">Local</label>
+    <div id="localVideo">
+      <video autoplay muted></video>
+      <div></div>
+    </div>
+    <label for="remoteVideo">Remote</label>
+    <div id="remoteVideo">
+      <video autoplay muted></video>
+      <div></div>
+      <div id="bitrate"></div>
+      <div id="peer"></div>
+    </div>
+  </section>
+  <br>
+  <section id="statistics">
+    <div id="senderStats"></div>
+    <div id="receiverStats"></div>
+  </section>
+  <br>
+  <div id="output"></div>
+
+
+<!--script src="https://cdn.temasys.com.sg/adapterjs/0.13.x/adapter.debug.js"></script-->
+<script src="adapter.js"></script>
+<script src="janustest.js"></script>
+
